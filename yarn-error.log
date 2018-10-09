@@ -1,0 +1,60 @@
+Arguments: 
+  /usr/local/Cellar/node/9.5.0/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Users/alniejacobe/.rvm/gems/ruby-2.1.5/bin:/Users/alniejacobe/.rvm/gems/ruby-2.1.5@global/bin:/Users/alniejacobe/.rvm/rubies/ruby-2.1.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/alniejacobe/.composer/bin:/Users/alniejacobe/.rvm/bin
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  9.5.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/alniejacobe/Projects/DMS Converter/package.json: Unexpected string in JSON at position 590
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:103:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "alnie-test",
+    "version": "1.0.0",
+    "description": "Alnie's DMS Converter",
+    "main": "index.js",
+    "author": "Alnie Jacobe <alniejacobe@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+      "react": "^16.5.2",
+      "react-dom": "^16.5.2",
+      "react-redux": "^5.0.7",
+      "redux": "^4.0.0"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.1.0",
+      "@babel/preset-env": "^7.1.0",
+      "@babel/preset-react": "^7.0.0",
+      "babel-loader": "^8.0.2",
+      "html-loader": "^0.5.5",
+      "html-webpack-plugin": "^3.2.0",
+      "webpack": "^4.20.1",
+      "webpack-cli": "^3.1.1"
+      "webpack-dev-server": "^3.1.9"
+    },
+    "scripts": {
+      "start": "webpack-dev-server --open --mode development",
+      "build": "webpack --mode production"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
